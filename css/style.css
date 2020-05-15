@@ -165,7 +165,7 @@ $phone:480px; sm
     padding-top: 1.5rem;
     width: 40%;
 
-    animation: moveInBottom .7s ease-out .55s;
+    animation: moveInBottom .5s ease-out .50s;
     animation-fill-mode: backwards;
 
 }
@@ -174,7 +174,7 @@ $phone:480px; sm
     padding-bottom: 2rem;
     width: 45%;
 
-    animation: moveInTop .7s ease-out .55s;
+    animation: moveInTop .5s ease-out .50s;
     animation-fill-mode: forwards;
 } 
 
