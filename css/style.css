@@ -525,6 +525,14 @@ and (max-width : 502px) {
         padding: 2rem 3rem;
     }
     
+    .alien {
+        width: 33%;
+    }
+
+    .rocket {
+        width: 29%;
+    }
+    
     .testimonial-image {
         width: 100%;
     }
