@@ -559,4 +559,8 @@ and (max-width : 502px) {
         padding: 0 6rem;
     }
 
+    .alex-room {
+        width: 100%;
+        padding: 5rem 0 2rem;
+    }
 }
