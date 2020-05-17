@@ -441,7 +441,7 @@ footer {
 
 .alex-room {
     width: 100%;
-    padding: 5rem 15rem 2rem;
+    padding: 5rem 0 2rem;
 }
 
 @media (max-width: 1261px) {
@@ -559,8 +559,4 @@ and (max-width : 502px) {
         padding: 0 6rem;
     }
 
-    .alex-room {
-        width: 100%;
-        padding: 5rem 3rem 2rem;
-    }
 }
