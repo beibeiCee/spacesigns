@@ -1,0 +1,575 @@
+/* 
+COLORS:
+
+Purple: #2D2942
+Purple: #42345A
+Another Purple: #5856B2
+Last na talaga: #8E7EA8
+LOL: #6155A0
+baby pink: #F3D2E6
+dark pink: #DB98B8
+violet blue: #ADC2EE
+powder blue: #AEE0ED
+another blue: #C7EFF9
+
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Gaegu", sans-serif;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 1.7;
+    color: #777;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+
+/* 
+$desktop:1200px;  col-xl
+$laptop:1024px  col-lg
+$tablet:768px; md 
+$phone:480px; sm 
+*/
+
+/* ---- Containers ---- */
+
+.container-fluid {
+    padding: 7rem 12rem;
+}
+
+/* Sections */
+
+.white-section {
+    background-color: #ffffff;
+}
+
+.colored-section {
+    background-color: #C7EFF9;
+}
+
+#features {
+    position: relative;
+}
+
+/* ---- HEADER ---- */
+    
+.header {
+    height: 95vh;
+    background-color: #42345A;
+    background-image: 
+    linear-gradient(
+        to left bottom, 
+        rgba(66, 52, 90, 0.1),
+       rgba(173, 192, 240, 0.3)),
+    url(../img/header1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+.icon-img {
+    position: absolute;
+    top: 2rem;
+    left: 12rem;
+    width: 13rem;
+}
+
+.navbar {
+    padding-top: 3rem;
+    display: block;
+}
+
+.navibar {
+    padding-left: 70rem;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 3.5rem;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+    color: #DB98B8;
+    padding-right: 3.5rem;
+}
+
+.header-images {
+    position: absolute;
+}
+
+.logo-img {
+    width: 55rem;  /* 40% */
+    top: 30%;    /* 13rem */
+    left: 50%;   /* 42rem */  
+    position: static;
+    
+}
+
+.astro-img {
+    width: 45rem;  /* 33% */
+    top: 50%;     /* 33rem */
+    left: 5%;     /* 8rem */
+    z-index: 1;
+}
+
+/* ----  INTRODUCTION ---- */
+
+.introduction {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+.greetings-main {
+    padding-top: 5rem;
+    padding-left: 50rem;
+    padding-right: 5rem;
+}
+
+.greetings-sub {
+    font-size: 2.7rem;
+    padding: 2rem 18rem 0 58rem;
+}
+
+/* ---- MY SKILLS ---- */
+
+.rocket {
+    padding-top: 1.5rem;
+    width: 40%;
+
+    animation: moveInBottom .5s ease-out .50s;
+    animation-fill-mode: backwards;
+
+}
+
+.alien {
+    padding-bottom: 2rem;
+    width: 45%;
+
+    animation: moveInTop .5s ease-out .50s;
+    animation-fill-mode: forwards;
+} 
+
+.rocket:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-6px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(6px, 0, 0);
+    }
+}
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+
+
+.alien:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+.first-skill {
+    padding-top: 2.5rem;
+}
+
+.mySkills {
+    padding: 3rem;
+}
+
+.my-skills {
+    padding: 0 35rem 7.5rem;
+}
+
+/* ---- REVIEWS ---- */
+
+.client-reviews{
+    padding-top: 2rem;
+}
+
+.carousel-item {
+    padding: 4rem 10rem 3rem;
+}
+
+.testimonial-image {
+    width: 85%;
+}
+
+.testimonial-text {
+    padding: 3.5rem 0 1.5rem;
+}
+
+.testimonial-insta {
+    color: #8E7EA8;
+}
+
+.testimonial-insta:hover {
+    color: #ADC2EE; 
+    text-decoration: none;
+}
+
+/* ---- CALL TO ACTION ---- */
+
+.contact-me {
+    padding: 8rem 30rem;
+}
+
+.cta {
+    font-size: 2.3rem;
+    padding: 1rem 3.5rem 3.5rem;
+}
+
+
+.cta-image {
+    padding-bottom: 2.5rem;
+    width: 15rem;
+    
+}
+
+.button {
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Gaegu", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #FACDE6;
+    color: #fff;
+    padding: 1.5rem 6rem;
+}
+
+.btn:hover {
+    color: #777;
+}
+
+
+/* ---- FOOTER ---- */
+
+footer {
+    background-color: #6155A0;
+    padding: 3.5rem 35rem 1rem;
+}
+
+
+.footer-link {
+    color: #fff;
+    margin: 2rem 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+  
+.footer-link:hover {
+    color: #fff;
+}
+
+/* .fab {
+    color: #fff;
+}
+
+.fa-youtube {
+    padding: 0 3.5rem 0;
+}
+
+.footer-section {
+    padding: .5rem 0 .5rem;
+} */
+
+.copyright {
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 5rem;
+}
+  
+.backto-top {
+    color: #FACDE6;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.backto-top:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+/* ---- PORTFOLIO PAGE ---- */
+
+.instaLogos {
+    padding-top: 7rem;
+}
+
+.sampleLogo {
+    width: 35rem;
+}
+
+.youtube-videos {
+    padding-bottom: 5rem;
+}
+
+.row {
+    padding-bottom: 2rem;
+}
+
+.random-image {
+    width: 40%;
+}
+
+/* ---- Paintings, Sketches and Studies ---- */
+
+.random-art {
+    padding-top: 5rem;
+}
+
+.random-text {
+    padding: 2.5rem 28rem 0;
+}
+
+.random-img {
+    width: 43%;
+}
+
+.random-img2 {
+    width: 90%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+
+/* ---- ABOUT PAGE ---- */
+
+.about-section {
+    background-color: #fff;
+}
+
+.about-icon {
+    width: 25rem;
+    padding-top: 3.5rem;
+}
+
+.more-about {
+    padding: 1.5rem;
+}
+
+.about-artist {
+    font-size: 2.3rem;
+    padding: 0 25rem 0 25rem;
+}
+
+.about-text {
+    padding-top: 2rem;
+}
+
+.about-links {
+    color: #FACDE6;
+    text-decoration: none;
+}
+
+.about-links:hover {
+    color: #DB98B8;
+    text-decoration: none;
+}
+
+.alex-room {
+    width: 100%;
+    padding: 5rem 0 2rem;
+}
+
+@media (max-width: 1261px) {
+
+    .navibar {
+        padding-left: 50rem;
+    }
+    
+}
+
+@media (max-width: 1060px) {
+
+    .navibar {
+        padding-left: 30rem;
+    }
+
+    .icon-img {
+        left: 4.5rem;
+    }
+    
+}
+
+@media (min-width : 320px) 
+and (max-width : 502px) {
+
+    #home {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+
+    .container-fluid {
+        padding: 5rem 2rem;
+    }
+
+    .icon-img {
+        left: 1.8rem;
+    }
+
+    .navbar {
+        padding-top: 4rem;
+    }
+
+    .navibar {
+        padding: 1rem 0 4.5rem 18rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .nav-item,
+    .nav-item:hover {
+        padding-right: 1.5rem;
+    }
+
+    .logo-img {
+        width: 90%;
+        top: 50%;
+        left: 10%;
+    }
+
+    .astro-img {
+        width: 65%;
+        top: 75%;
+        left: 17%;
+        z-index: 1;
+    }
+
+    .greetings-main {
+        padding: 30rem 4rem 0;
+    }
+    
+    .greetings-sub {
+        font-size: 2.3rem;
+        padding: 5rem 5rem 0;
+    }
+
+    .mySkills {
+        padding: 0;
+        margin-bottom: auto;
+    }
+
+    .skills {
+        padding: 2rem 3rem;
+    }
+
+    .alien {
+        width: 33%;
+    }
+
+    .rocket {
+        width: 29%;
+    }
+    
+    .testimonial-image {
+        width: 100%;
+    }
+
+    footer {
+        padding: 3.5rem 2.5rem 1rem;
+    }
+
+    .random-img,
+    .random-img2 {
+        width: 100%
+    }
+
+    .random-text {
+        padding: 1.5rem
+    }
+
+    .about-artist {
+        padding: 0 6rem;
+    }
+
+    /* .alex-room {
+        width: 100%;
+        padding: 5rem 3rem 2rem;
+    } */
+
+}
